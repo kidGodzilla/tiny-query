@@ -1,4 +1,4 @@
-# tiny-query
+# Tiny-query
 
 [![npm version](https://badge.fury.io/js/tiny-query.svg)](https://www.npmjs.com/package/tiny-query)
 [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://opensource.org/licenses/MIT)
