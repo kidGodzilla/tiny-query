@@ -42,7 +42,11 @@ $('body').hide()
 ```
 
 ```
-$('body').find('p').addClass('foo').fadeOut();
+$('body').find('p').addClass('foo');
+```
+
+```
+$('p').eq(4).fadeOut();
 ```
 
 ```
