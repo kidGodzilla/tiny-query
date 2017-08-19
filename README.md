@@ -1,5 +1,9 @@
 # tiny-query
 
+[![npm version](https://badge.fury.io/js/tiny-query.svg)](https://www.npmjs.com/package/tiny-query)
+[![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://opensource.org/licenses/MIT)
+![Contains](https://img.shields.io/badge/contains-badges-orange.svg)
+
 ## TinyQuery is a modern selector library that doesn't do much.
 
 Most of the syntactic sugar of jQuery. **2kb compressed.**
