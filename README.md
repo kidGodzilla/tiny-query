@@ -24,7 +24,6 @@ or alternatively:
 https://cdn.jsdelivr.net/npm/tiny-query@latest/tiny-query.min.js
 ```
 
-
 ### What it does
 
 You can use it as a jQuery replacement, particularly if you do not need to target anything older than IE10, and are fine with losing compatability with older versions of Android.
@@ -36,6 +35,24 @@ TinyQuery includes most of the useful parts of jQuery, including:
 - Effects
 - Events
 
+### Examples
+
+```
+$('body').hide()
+```
+
+```
+$('body').find('p').addClass('foo').fadeOut();
+```
+
+```
+$('#form').on('submit', (e) => {
+	e.preventDefault();
+	console.log('Submitted!');
+});
+```
+
+
 ### What's missing
 
 By default, `$.ajax` is not supported. However, if you first include the `reqwest` library, it will be included as `$.ajax`.
@@ -43,6 +60,8 @@ By default, `$.ajax` is not supported. However, if you first include the `reqwes
 ```
 https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.5/reqwest.min.js
 ```
+
+Also, jQuery tends to alias a ton of things for convenience. I'm open to it (via Pull Request), I just haven't implemented a lot of that. ($(s).on('click') vs. $(s).click(), etc.)
 
 -----
 
