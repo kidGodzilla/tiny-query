@@ -34,9 +34,21 @@ TinyQuery includes most of the useful parts of jQuery, including:
 - Effects
 - Events
 
+### What's missing
+
 By default, `$.ajax` is not supported. However, if you first include the `reqwest` library, it will be included as `$.ajax`.
 
 ```
 https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.5/reqwest.min.js
 ```
+
+-----
+
+Also, some more complex behavior may be missing, even when a method is partially supported.
+
+This is a WIP. Feel free to open issues (or Pull Requests!) if you find anything that annoys you.
+
+
+## Thanks!
+
 
