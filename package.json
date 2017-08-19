@@ -1,6 +1,6 @@
 {
   "name": "tiny-query",
-  "version": "0.4.10",
+  "version": "0.4.11",
   "description": "TinyQuery is a modern selector library that doesn't do much. 2kb compressed.",
   "main": "tiny-query.min.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "utilities"
   ],
   "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kidGodzilla/tiny-query/issues"
   },
