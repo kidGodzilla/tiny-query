@@ -2,6 +2,8 @@
 
 ## TinyQuery is a modern selector library that doesn't do much.
 
+Most of the syntactic sugar of jQuery. **2kb compressed.**
+
 ### Installation via NPM
 
 ```
