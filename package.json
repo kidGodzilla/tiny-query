@@ -1,0 +1,30 @@
+{
+  "name": "tiny-query",
+  "version": "0.4.9",
+  "description": "TinyQuery is a modern selector library that doesn't do much.",
+  "main": "tiny-query.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/tiny-query.git"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "selector",
+    "engine",
+    "DOM",
+    "utilities",
+    "events",
+    "element",
+    "utilities"
+  ],
+  "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/tiny-query/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/tiny-query#readme"
+}
