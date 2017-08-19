@@ -73,6 +73,10 @@ Also, jQuery tends to alias a ton of things for convenience. I'm open to it (via
 
 -----
 
+https://docs.google.com/document/d/1LPaPA30bLUB_publLIMF0RlhdnPx_ePXm7oW02iiT6o/edit is a good write-up of browser-specific workarounds you get for free when using jQuery.
+
+-----
+
 Also, some more complex behavior may be missing, even when a method is partially supported.
 
 This is a WIP. Feel free to open issues (or Pull Requests!) if you find anything that annoys you.
