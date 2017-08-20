@@ -385,9 +385,6 @@
       this.items = [s];
     }
 
-    // Todo:
-    // closest?
-
     this.return = () => {
       // Prototypical exports
       Object.keys(this).forEach((key) => {
@@ -418,5 +415,7 @@
   // $.ajax is a special case
   if (window.reqwest) $.__proto__.ajax = TinyQuery().ajax;
 
-  window.$ = $; // Export to window object
+  // Export to window object
+  window.$ = $; // Modify this if you would like to use a different global namespace
+
 })(typeof window !== "undefined" ? window : this, document);
