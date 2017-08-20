@@ -39,6 +39,14 @@ TinyQuery includes most of the useful parts of jQuery, including:
 - Effects
 - Events
 
+### Why
+
+jQuery is great. It makes the DOM easy to manipulate, despite an unforgiving native API.
+
+But, you ever wonder what it would look like if you started over, and just used modern Javascript?
+
+Well, it's something like 400 lines of code. And you're looking at it.
+
 ### Examples
 
 ```
@@ -69,6 +77,8 @@ By default, `$.ajax` is not supported. However, if you first include the `reqwes
 https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.5/reqwest.min.js
 ```
 
+-----
+
 Also, jQuery tends to alias a ton of things for convenience. I'm open to it (via Pull Request), I just haven't implemented a lot of that. ($(s).on('click') vs. $(s).click(), etc.)
 
 -----
@@ -81,7 +91,6 @@ Also, some more complex behavior may be missing, even when a method is partially
 
 This is a WIP. Feel free to open issues (or Pull Requests!) if you find anything that annoys you.
 
+-----
 
 ## Thanks!
-
-
