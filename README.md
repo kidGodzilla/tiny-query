@@ -30,7 +30,7 @@ https://cdn.jsdelivr.net/npm/tiny-query@latest/tiny-query.min.js
 
 ### What it does
 
-You can use it as a jQuery replacement, particularly if you do not need to target anything older than IE10, and are fine with losing compatability with older versions of Android.
+You can use it as a jQuery replacement, particularly if you only need to target modern browsers.
 
 TinyQuery includes most of the useful parts of jQuery, including:
 
