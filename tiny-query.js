@@ -3,7 +3,7 @@ function TinyQuery(s) {
   this.items = [];
 
   this.applyAll = fn => {
-    this.items.forEach(function(item) {
+    this.items.forEach(item => {
       fn(item);
     });
   };
@@ -31,7 +31,7 @@ function TinyQuery(s) {
   this.toggleClass = classList => {
     let classes = classList.trim().split(" ");
 
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.classList.toggle(classes);
     });
 
@@ -39,7 +39,7 @@ function TinyQuery(s) {
   };
 
   this.show = () => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.style.display = "";
       item.style.opacity = 1;
     });
@@ -48,7 +48,7 @@ function TinyQuery(s) {
   };
 
   this.hide = () => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.style.display = "none";
     });
 
@@ -84,7 +84,7 @@ function TinyQuery(s) {
   };
 
   this.fadeIn = () => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.style.transition = "opacity 400ms";
 
       if (item.style.display == "none") {
@@ -99,7 +99,7 @@ function TinyQuery(s) {
   };
 
   this.fadeOut = () => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.style.transition = "opacity 400ms";
       item.style.opacity = 0;
     });
@@ -108,7 +108,7 @@ function TinyQuery(s) {
   };
 
   this.before = htmlString => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.insertAdjacentHTML("beforebegin", htmlString);
     });
 
@@ -116,7 +116,7 @@ function TinyQuery(s) {
   };
 
   this.after = htmlString => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.insertAdjacentHTML("afterend", htmlString);
     });
 
@@ -124,7 +124,7 @@ function TinyQuery(s) {
   };
 
   this.append = el => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.appendChild(el);
     });
 
@@ -132,7 +132,7 @@ function TinyQuery(s) {
   };
 
   this.prepend = el => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.insertBefore(el, parent.firstChild);
     });
 
@@ -141,7 +141,7 @@ function TinyQuery(s) {
 
   this.html = string => {
     if (typeof string == "string") {
-      this.items.forEach(item => {
+      this.applyAll(item => {
         item.innerHTML = string;
       });
 
@@ -153,7 +153,7 @@ function TinyQuery(s) {
 
   this.outerHtml = string => {
     if (typeof string == "string") {
-      this.items.forEach(item => {
+      this.applyAll(item => {
         item.outerHTML = string;
       });
 
@@ -165,7 +165,7 @@ function TinyQuery(s) {
 
   this.text = string => {
     if (typeof string == "string") {
-      this.items.forEach(item => {
+      this.applyAll(item => {
         item.textContent = string;
       });
 
@@ -176,7 +176,7 @@ function TinyQuery(s) {
   };
 
   this.remove = () => {
-    this.items.forEach(item => {
+    this.applyAll(item => {
       item.parentNode.removeChild(item);
     });
 
@@ -235,7 +235,7 @@ function TinyQuery(s) {
    */
   this.attr = (attribute, value) => {
     if (value) {
-      this.items.forEach(item => {
+      this.applyAll(item => {
         item.setAttribute(attribute, value);
       });
 
@@ -378,7 +378,7 @@ function TinyQuery(s) {
   }
 
   // Todo:
-  // closest
+  // closest?
 
   this.return = () => {
     // Prototypical exports
@@ -386,9 +386,6 @@ function TinyQuery(s) {
       if (key !== 'items' && key !== 'return')
         this.items['__proto__'][key] = this[key];
     });
-
-    // $.ajax is a special case
-    if (window.reqwest) this.items.__proto__.ajax = this.ajax;
 
     if (s && typeof s === 'string')
       return this.items;
@@ -407,7 +404,7 @@ const $ = s => {
 // Prototypical exports
 Object.keys(TinyQuery()).forEach((key) => {
   if (key !== 'items' && key !== 'return')
-    $['__proto__'][key] = TinyQuery()[key];
+    $['__proto__'][key] = TinyQuery()[key]; // Todo: inefficient
 });
 
 // $.ajax is a special case
