@@ -55,8 +55,8 @@ $('p').eq(4).fadeOut();
 
 ```
 $('#form').on('submit', (e) => {
-	e.preventDefault();
-	console.log('Submitted!');
+  e.preventDefault();
+  console.log('Submitted!');
 });
 ```
 
