@@ -1,6 +1,6 @@
 {
   "name": "tiny-query",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "description": "TinyQuery is a modern selector library that doesn't do much. 2kb compressed.",
   "main": "tiny-query.min.js",
   "scripts": {
