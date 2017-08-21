@@ -67,6 +67,11 @@ $('#form').on('submit', (e) => {
 ```
 
 
+### Demo
+
+Open your browser's inspect tool (such as the Chrome console). The script has been included on this page!
+
+
 ### What's missing
 
 By default, `$.ajax` is not supported. However, if you first include the `reqwest` library, it will be included as `$.ajax`.
