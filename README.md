@@ -82,7 +82,7 @@ https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.5/reqwest.min.js
 
 -----
 
-Also, jQuery tends to alias a ton of things for convenience. I'm open to it (via Pull Request), I just haven't implemented a lot of that. ($(s).on('click') vs. $(s).click(), etc.)
+Also, jQuery tends to alias a ton of things for convenience. I'm open to it (via Pull Request), I just haven't implemented a lot of that. (`$(s).on('click')` vs. `$(s).click()`, etc.)
 
 -----
 
