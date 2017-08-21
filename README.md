@@ -92,3 +92,8 @@ This is a WIP. Feel free to open issues (or Pull Requests!) if you find anything
 -----
 
 ## Thanks!
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/tiny-query@latest/tiny-query.min.js"></script>
