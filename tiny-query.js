@@ -196,6 +196,9 @@
     };
 
     this.is = otherEl => {
+      if (typeof otherEl == 'string')
+        return (this.items[0].matches || this.items[0].matchesSelector || this.items[0].msMatchesSelector || this.items[0].mozMatchesSelector || this.items[0].webkitMatchesSelector || this.items[0].oMatchesSelector).call(this.items[0], otherEl);
+
       return this.items[0] === otherEl;
     };
 
@@ -370,6 +373,19 @@
       this.items = [this.items[0]];
       return this;
     };
+
+    this.val = newValue => {
+      if (newValue) {
+        this.applyAll(item => {
+          item.value = newValue;
+        });
+
+        return this;
+      }
+
+      return this.items[0].value;
+    };
+
 
     // https://cdnjs.cloudflare.com/ajax/libs/reqwest/2.0.5/reqwest.min.js
     if (window.reqwest) {
